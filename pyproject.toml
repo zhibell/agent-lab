@@ -7,7 +7,14 @@ authors = [
     { name = "zhibell", email = "3078607589@qq.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic>=2",
+    "litellm>=1.75.5",
+    "jinja2",
+    "pyyaml",
+    "typer",
+    "python-dotenv"
+]
 
 [project.scripts]
 agent-lab = "agent_lab:main"
